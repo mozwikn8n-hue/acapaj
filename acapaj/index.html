@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Aplica o tema guardado ANTES da primeira pintura da página,
+  // para evitar o "flash" do tema claro quando o visitante tem o
+  // tema escuro activo.
+  try {
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
+</script>
+<title>ACAPAJ | Associação Para Consciencialização e Auxílio Preventivo de Adolescentes e Jovens</title>
+<meta name="description" content="A ACAPAJ promove consciencialização, prevenção, apoio psicológico, capacitação e desenvolvimento de adolescentes e jovens em Moçambique desde 2021.">
+<meta name="theme-color" content="#1B5E3A">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_MZ">
+<meta property="og:title" content="ACAPAJ — Associação Para Consciencialização e Auxílio Preventivo de Adolescentes e Jovens">
+<meta property="og:description" content="Educação, apoio psicológico, prevenção social e desenvolvimento humano para adolescentes, jovens e comunidades em Moçambique desde 2021.">
+<meta name="twitter:card" content="summary">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="#inicio" class="logo">
+      <img src="assets/logos/ACAPAJ BORDA.png" alt="Logotipo ACAPAJ">
+    </a>
+    <nav id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#actuacao">Áreas de Actuação</a>
+      <a href="caminhada-amarela.html">Caminhada Amarela</a>
+      <a href="#projectos">Projectos</a>
+      <a href="#parceiros">Parceiros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+        <i class="icon fa-solid fa-moon"></i>
+      </button>
+      <button id="menu-btn" aria-label="Abrir menu">
+        <i class="icon fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="hero-badge">Desde 2021 · Maputo, Moçambique</span>
+    <h1>Construindo uma geração mais consciente, saudável e preparada para transformar Moçambique.</h1>
+    <p>A ACAPAJ promove educação, apoio psicológico, prevenção social e desenvolvimento humano para adolescentes, jovens e comunidades.</p>
+    <div class="buttons">
+      <a href="#sobre" class="btn-primary">Conheça a ACAPAJ</a>
+      <a href="#contacto" class="btn-outline">Seja Voluntário</a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="impact-header">
+      <span>O nosso impacto</span>
+      <h2>Transformamos números em histórias reais</h2>
+      <p>Desde 2021, cada acção representa uma oportunidade criada para adolescentes, jovens e comunidades em Moçambique.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="impact-card">
+        <i class="impact-icon fa-solid fa-users"></i>
+        <h3>+1100</h3>
+        <p>Jovens e Adolescentes Impactados</p>
+      </div>
+      <div class="impact-card">
+        <i class="impact-icon fa-solid fa-seedling"></i>
+        <h3>2021</h3>
+        <p>Ano de Fundação</p>
+      </div>
+      <div class="impact-card">
+        <i class="impact-icon fa-solid fa-location-dot"></i>
+        <h3>+10</h3>
+        <p>Pontos do País Alcançados</p>
+      </div>
+      <div class="impact-card">
+        <i class="impact-icon fa-solid fa-handshake"></i>
+        <h3>5</h3>
+        <p>Anos de Trabalho Voluntário</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="container about-grid">
+    <img src="assets/imagens/hero.jpg.png" alt="Sobre a ACAPAJ">
+    <div>
+      <h2>Sobre a ACAPAJ</h2>
+      <p>A Associação para a Consciencialização e Auxílio Preventivo a Adolescentes e Jovens é uma organização juvenil moçambicana criada em 2021, dedicada à promoção do bem-estar psicológico, do desenvolvimento pessoal e da inclusão social de adolescentes e jovens. Ao longo da sua trajectória, tem desenvolvido palestras, campanhas de sensibilização, actividades comunitárias, programas de capacitação e espaços seguros de diálogo.</p>
+      <div class="highlights">
+        <div>
+          <h3>Missão</h3>
+          <p>Promover o bem-estar emocional, a consciencialização social e o desenvolvimento integral de adolescentes e jovens.</p>
+        </div>
+        <div>
+          <h3>Visão</h3>
+          <p>Ser uma referência nacional na promoção da saúde mental e prevenção de comportamentos de risco entre adolescentes e jovens.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="container">
+    <div class="values-header">
+      <span>O que nos move</span>
+      <h2>Os nossos valores</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-item">
+        <span class="value-mark">01</span>
+        <h3>Esperança</h3>
+        <p>Acreditamos que cada jovem pode construir um futuro melhor.</p>
+      </div>
+      <div class="value-item">
+        <span class="value-mark">02</span>
+        <h3>Empatia</h3>
+        <p>Ouvimos antes de agir, e cuidamos antes de orientar.</p>
+      </div>
+      <div class="value-item">
+        <span class="value-mark">03</span>
+        <h3>Cuidado</h3>
+        <p>Tratamos cada história com atenção e respeito genuínos.</p>
+      </div>
+      <div class="value-item">
+        <span class="value-mark">04</span>
+        <h3>Transformação Pessoal</h3>
+        <p>Criamos caminhos reais de crescimento e mudança duradoura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="purpose">
+  <div class="container">
+    <h2>Porque Existimos</h2>
+    <p>Muitos adolescentes e jovens enfrentam desafios relacionados com saúde mental, exclusão social, violência, desemprego e falta de oportunidades. A ACAPAJ trabalha para criar caminhos de prevenção, orientação e desenvolvimento humano.</p>
+  </div>
+</section>
+
+<section class="areas" id="actuacao">
+  <div class="container">
+    <h2>Áreas de Actuação</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="icon-card fa-solid fa-brain"></i>
+        <h3>Psicologia e Saúde Mental</h3>
+        <p>Apoio emocional, orientação psicológica e promoção do bem-estar dos adolescentes e jovens.</p>
+      </div>
+      <div class="card">
+        <i class="icon-card fa-solid fa-shield-halved"></i>
+        <h3>Prevenção Social</h3>
+        <p>Consciencialização sobre riscos sociais e promoção de comportamentos positivos.</p>
+      </div>
+      <div class="card">
+        <i class="icon-card fa-solid fa-book-open"></i>
+        <h3>Educação e Capacitação</h3>
+        <p>Desenvolvimento de competências pessoais, sociais e profissionais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     EVENTO — PRÉVIA NA HOME (a página completa fica em caminhada-amarela.html)
+========================= -->
+<section class="event-teaser" id="evento">
+  <div class="container event-teaser-grid">
+    <div class="event-teaser-info">
+      <span class="event-badge">Setembro Amarelo 2026</span>
+      <h2>Caminhada Amarela</h2>
+      <p class="event-theme">"Caminhar, Ouvir e Apoiar"</p>
+      <p>Uma manhã de consciencialização e movimento colectivo pelas ruas de Maputo, integrada nas celebrações do Setembro Amarelo. Conheça o percurso completo, o horário e como participar ou patrocinar.</p>
+      <div class="buttons">
+        <a href="caminhada-amarela.html" class="btn-primary">
+          Conhecer o evento
+          <i class="icon-inline fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <a href="caminhada-amarela.html" class="event-map-preview" aria-label="Ver detalhes da Caminhada Amarela">
+      <div class="map-pin map-pin-start"><span>A</span></div>
+      <div class="map-route"></div>
+      <div class="map-pin map-pin-end"><span>B</span></div>
+      <p class="map-preview-label">UP Lhanguene → Jardim Tunduru · 12 de Setembro</p>
+    </a>
+  </div>
+</section>
+
+<!-- =========================
+     PROJECTOS
+========================= -->
+<section class="projects" id="projectos">
+  <div class="container">
+    <h2>Nossos Projectos</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="icon-card fa-solid fa-seedling"></i>
+        <h3>Programas Juvenis</h3>
+        <p>Actividades educativas e iniciativas de desenvolvimento pessoal, social e profissional para adolescentes e jovens.</p>
+      </div>
+      <div class="card">
+        <i class="icon-card fa-solid fa-brain"></i>
+        <h3>Apoio Psicológico</h3>
+        <p>Acompanhamento emocional, orientação psicológica e promoção da saúde mental.</p>
+      </div>
+      <div class="card">
+        <i class="icon-card fa-solid fa-handshake"></i>
+        <h3>Acções Comunitárias</h3>
+        <p>Intervenções sociais destinadas a fortalecer comunidades e criar oportunidades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     GALERIA
+========================= -->
+<section class="gallery">
+  <div class="container">
+    <h2>Momentos que Inspiram</h2>
+    <div class="gallery-grid">
+      <img src="assets/imagens/momentos/momento2.webp" alt="Actividade ACAPAJ">
+      <img src="assets/imagens/momentos/momento1.webp" alt="Jovens ACAPAJ">
+      <img src="assets/imagens/momentos/momento3.webp" alt="Projecto comunitário">
+      <img src="assets/imagens/momentos/momento3.webp" alt="Acção social">
+      <img src="assets/imagens/momentos/momento4.webp" alt="Formação juvenil">
+      <img src="assets/imagens/momentos/momento5.webp" alt="Comunidade ACAPAJ">
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     TESTEMUNHOS
+========================= -->
+<section class="testimonials">
+  <div class="container">
+    <h2>O impacto da ACAPAJ</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"A ACAPAJ ajudou-me a desenvolver confiança e a acreditar mais no meu futuro."</p>
+        <h4>Jovem participante</h4>
+      </div>
+      <div class="testimonial">
+        <p>"As iniciativas desenvolvidas têm criado mudanças positivas na comunidade."</p>
+        <h4>Parceiro comunitário</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Encontramos apoio, orientação e novas oportunidades através dos programas."</p>
+        <h4>Beneficiário</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PARCEIROS / SEJA PATROCINADOR
+========================= -->
+<section class="partners" id="parceiros">
+  <div class="container">
+    <h2>Parceiros</h2>
+    <p class="section-description">Construímos alianças para ampliar o impacto das nossas iniciativas.</p>
+    <div class="partners-grid">
+      <div class="partner-logo"><img src="assets/logos/mf-logo.png" alt="Parceiro ACAPAJ"></div>
+      <div class="partner-logo"><img src="assets/logos/mf1.png" alt="Parceiro ACAPAJ"></div>
+    </div>
+
+    <div class="sponsor-box">
+      <div class="sponsor-text">
+        <h3>Torne-se Parceiro da Caminhada Amarela</h3>
+        <p>Associe a sua marca a uma causa que salva vidas e fortaleça a sua responsabilidade social corporativa.</p>
+      </div>
+      <ul class="sponsor-list">
+        <li>Demonstrar compromisso com a saúde mental e o bem-estar da comunidade</li>
+        <li>Reforçar a política de responsabilidade social corporativa</li>
+        <li>Associar a marca a uma causa social relevante</li>
+        <li>Promover uma cultura de prevenção, inclusão e valorização da vida</li>
+        <li>Fortalecer a visibilidade junto da comunidade</li>
+      </ul>
+      <a href="caminhada-amarela.html#patrocinio" class="btn-primary">Quero ser Parceiro</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     CTA FINAL
+========================= -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Cada passo pode ser uma mensagem de esperança.</h2>
+    <p>Cada parceria pode ajudar a salvar vidas. Juntos podemos criar mais oportunidades para adolescentes e jovens.</p>
+    <div class="buttons">
+      <a href="#contacto" class="btn-primary">Quero Participar</a>
+      <a href="#projectos" class="btn-outline">Ver Projectos</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     CONTACTO
+========================= -->
+<section class="contact" id="contacto">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h2>Entre em contacto</h2>
+      <p>Estamos disponíveis para parcerias, voluntariado e apoio.</p>
+      <div class="contact-item"><i class="icon-inline fa-solid fa-user"></i> Dádiva Gulele — Coordenadora da ACAPAJ</div>
+      <div class="contact-item"><i class="icon-inline fa-solid fa-location-dot"></i> Maputo, Moçambique</div>
+      <div class="contact-item"><i class="icon-inline fa-solid fa-envelope"></i> <a href="mailto:acapaj21@gmail.com">acapaj21@gmail.com</a></div>
+      <div class="contact-item"><i class="icon-inline fa-solid fa-phone"></i> <a href="tel:+258863357115">(+258) 86 335 7115</a> / <a href="tel:+258869886431">86 988 6431</a></div>
+      <div class="contact-item"><i class="icon-inline fa-solid fa-clock"></i> Segunda a Sexta</div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Maputo+Mo%C3%A7ambique" target="_blank" rel="noopener noreferrer" class="btn-outline">
+        <i class="icon-inline fa-solid fa-location-dot"></i> Abrir mapa
+      </a>
+    </div>
+    
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logos/ACAPAJ BORDA.png" alt="ACAPAJ">
+      <p>Transformando adolescentes e jovens através da consciencialização, prevenção e desenvolvimento humano. Desde 2021, em Maputo, Moçambique.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Navegação</h3>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="caminhada-amarela.html">Caminhada Amarela</a>
+      <a href="#projectos">Projectos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>Maputo, Moçambique</p>
+      <p><a href="mailto:acapaj21@gmail.com">acapaj21@gmail.com</a></p>
+      <p><a href="tel:+258863357115">(+258) 86 335 7115</a></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/acapaj.mz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/acapaj.mz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="https://wa.me/258863357115" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© ACAPAJ 2026 — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
