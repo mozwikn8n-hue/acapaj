@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Aplica o tema guardado ANTES da primeira pintura da página,
+  // para evitar o "flash" do tema claro quando o visitante tem o
+  // tema escuro activo.
+  try {
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
+</script>
+<title>Caminhada Amarela 2026 | ACAPAJ — Setembro Amarelo em Maputo</title>
+<meta name="description" content="Caminhada Amarela: 12 de Setembro de 2026, Maputo. Tema 'Caminhar, Ouvir e Apoiar'. Participe ou patrocine esta iniciativa de prevenção do suicídio e promoção da saúde mental.">
+<meta name="theme-color" content="#1B5E3A">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_MZ">
+<meta property="og:title" content="Caminhada Amarela 2026 — ACAPAJ">
+<meta property="og:description" content="12 de Setembro de 2026, Maputo. Tema 'Caminhar, Ouvir e Apoiar'. Participe ou patrocine esta iniciativa de prevenção do suicídio e promoção da saúde mental.">
+<meta name="twitter:card" content="summary">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">
+      <img src="assets/logos/ACAPAJ BORDA.png" alt="Logotipo ACAPAJ">
+    </a>
+    <nav id="menu">
+      <a href="index.html#inicio">Início</a>
+      <a href="index.html#sobre">Sobre Nós</a>
+      <a href="index.html#actuacao">Áreas de Actuação</a>
+      <a href="caminhada-amarela.html" class="active">Caminhada Amarela</a>
+      <a href="index.html#projectos">Projectos</a>
+      <a href="index.html#parceiros">Parceiros</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Alternar tema claro/escuro">
+        <i class="icon fa-solid fa-moon"></i>
+      </button>
+      <button id="menu-btn" aria-label="Abrir menu">
+        <i class="icon fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- =========================
+     HERO DO EVENTO
+========================= -->
+<section class="event-hero">
+  <div class="event-hero-overlay"></div>
+  <div class="container event-hero-content">
+    <span class="hero-badge">Setembro Amarelo 2026</span>
+    <h1>Caminhada Amarela</h1>
+    <p class="event-theme-large">"Caminhar, Ouvir e Apoiar"</p>
+    <p class="event-hero-desc">Uma manhã de consciencialização e movimento colectivo pelas ruas de Maputo, integrada nas celebrações do Setembro Amarelo — movimento internacional de sensibilização para a prevenção do suicídio e promoção da saúde mental.</p>
+    <div class="buttons">
+      <a href="#inscricao" class="btn-primary">Quero participar</a>
+      <a href="#patrocinio" class="btn-outline-light">Quero patrocinar</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     GALERIA CAMINHADA AMARELA
+========================= -->
+<section class="walk-gallery">
+  <div class="container">
+    <div class="section-heading">
+      <span>Momentos</span>
+      <h2>Caminhada Amarela</h2>
+    </div>
+    <div class="carousel">
+      <div class="carousel-track">
+        <img 
+        src="assets/imagens/caminhada/caminhada-1.jpg" 
+        alt="Participantes da Caminhada Amarela">
+        <img 
+        src="assets/imagens/caminhada/caminhada-1-WA0039 (2).webp" 
+        alt="Momento da Caminhada Amarela">
+        <img 
+        src="assets/imagens/caminhada/caminhada-2-WA0039 (1).webp" 
+        alt="Evento Setembro Amarelo">
+        <!-- duplicação para loop infinito -->
+        <img 
+        src="assets/imagens/hero.jpg.png" 
+        alt="Participantes da Caminhada Amarela">
+        <img 
+        src="assets/imagens/caminhada/moment-WA0054.webp" 
+        alt="Momento da Caminhada Amarela">
+        <img 
+        src="assets/imagens/caminhada/acapaj.webp" 
+        alt="Evento Setembro Amarelo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     FICHA RÁPIDA DO EVENTO
+========================= -->
+<section class="event-quickfacts">
+  <div class="container quickfacts-grid">
+    <div class="quickfact">
+      <i class="icon-quickfact fa-solid fa-calendar-days"></i>
+      <span class="quickfact-label">Data</span>
+      <span class="quickfact-value">12 de Setembro de 2026</span>
+    </div>
+    <div class="quickfact">
+      <i class="icon-quickfact fa-solid fa-clock"></i>
+      <span class="quickfact-label">Horário</span>
+      <span class="quickfact-value">07h00 às 14h00</span>
+    </div>
+    <div class="quickfact">
+      <i class="icon-quickfact fa-solid fa-location-dot"></i>
+      <span class="quickfact-label">Local</span>
+      <span class="quickfact-value">Maputo</span>
+    </div>
+    <div class="quickfact">
+      <i class="icon-quickfact fa-solid fa-users"></i>
+      <span class="quickfact-label">Participantes esperados</span>
+      <span class="quickfact-value">100 a 150 pessoas</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PROGRAMA DO DIA
+========================= -->
+<section class="event-program">
+  <div class="container">
+    <div class="section-heading">
+      <span>Programa do dia</span>
+      <h2>Como vai funcionar a manhã</h2>
+    </div>
+
+    <div class="program-timeline">
+      <div class="program-step">
+        <span class="program-mark">A</span>
+        <div class="program-step-body">
+          <span class="program-time">07h00 — 09h00</span>
+          <h3>Caminhada</h3>
+          <p>Partida da Av. do Trabalho, junto à Universidade Pedagógica de Maputo, percorrendo o centro da cidade até ao Jardim Tunduru.</p>
+        </div>
+      </div>
+      <div class="program-step">
+        <span class="program-mark">B</span>
+        <div class="program-step-body">
+          <span class="program-time">09h00 — 14h00</span>
+          <h3>Ginástica e palestra de sensibilização</h3>
+          <p>No Jardim Tunduru: momentos de reflexão, sessão de informação sobre saúde mental e interacção entre parceiros e participantes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PERCURSO E MAPA
+========================= -->
+<section class="event-route-section" id="percurso">
+  <div class="container route-grid">
+    <div class="route-info">
+      <div class="section-heading">
+        <span>O percurso</span>
+        <h2>De Lhanguene ao Jardim Tunduru</h2>
+      </div>
+      <p>O trajecto atravessa algumas das principais avenidas de Maputo. Junte-se à caminhada em qualquer ponto do percurso ou acompanhe desde o início, na Universidade Pedagógica.</p>
+
+      <ol class="route-list">
+        <li><span class="route-list-mark">1</span>Av. do Trabalho <span class="route-list-tag">Partida</span></li>
+        <li><span class="route-list-mark">2</span>Rua 2019</li>
+        <li><span class="route-list-mark">3</span>Av. 24 de Julho</li>
+        <li><span class="route-list-mark">4</span>Av. Karl Marx</li>
+        <li><span class="route-list-mark">5</span>Av. Ho Chi Min</li>
+        <li><span class="route-list-mark">6</span>Rua Municipal Oeste</li>
+        <li><span class="route-list-mark">7</span>Av. Samora Machel</li>
+        <li><span class="route-list-mark">8</span>Jardim Tunduru <span class="route-list-tag route-list-tag-end">Chegada</span></li>
+      </ol>
+
+      <button id="open-map" class="btn-outline">
+        <i class="icon-inline fa-solid fa-location-dot"></i>
+        Ver percurso no mapa
+      </button>
+    </div>
+
+    <div class="event-map-preview-large" id="open-map-preview">
+      <div class="map-pin map-pin-start"><span>A</span></div>
+      <div class="map-route"></div>
+      <div class="map-pin map-pin-end"><span>B</span></div>
+      <p class="map-preview-label">Toque para abrir o trajecto completo</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     MODAL DO MAPA
+========================= -->
+<div class="map-modal" id="map-modal" aria-hidden="true">
+  <div class="map-modal-backdrop" data-close-map></div>
+  <div class="map-modal-content" role="dialog" aria-modal="true" aria-labelledby="map-modal-title">
+    <div class="map-modal-header">
+      <h3 id="map-modal-title">Percurso da Caminhada Amarela</h3>
+      <button class="map-modal-close" data-close-map aria-label="Fechar mapa">
+        <i class="icon fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="map-modal-body">
+      <iframe
+        id="map-iframe"
+        src=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="map-modal-footer">
+      <span>UP Lhanguene → Jardim Tunduru</span>
+      <a id="map-external-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-small">Abrir no Google Maps</a>
+    </div>
+  </div>
+</div>
+
+<!-- =========================
+     PORQUE PARTICIPAR / SETEMBRO AMARELO
+========================= -->
+<section class="event-context">
+  <div class="container event-context-grid">
+    <div>
+      <div class="section-heading">
+        <span>Setembro Amarelo</span>
+        <h2>Porque esta causa importa</h2>
+      </div>
+      <p>Setembro Amarelo é o movimento internacional de sensibilização para a prevenção do suicídio e promoção da saúde mental. A Caminhada Amarela é a forma da ACAPAJ levar esta conversa para as ruas de Maputo, envolvendo adolescentes, jovens, famílias e parceiros num só momento de consciencialização colectiva.</p>
+      <p>Cada inscrição, cada partilha e cada parceria ajuda a alargar o alcance desta mensagem a mais pessoas que precisam de ouvir que não estão sós.</p>
+    </div>
+    <div class="event-context-quote">
+      <p>"Cada passo pode ser uma mensagem de esperança. Cada parceria pode ajudar a salvar vidas."</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     INSCRIÇÃO
+========================= -->
+<section class="event-cta-section" id="inscricao">
+  <div class="container event-cta-grid">
+    <div class="event-cta-info">
+      <h2>Quero participar na Caminhada</h2>
+      <p>Deixe os seus dados e a equipa da ACAPAJ entra em contacto com todas as informações para o dia 12 de Setembro.</p>
+    </div>
+    <div class="contact-form">
+      <form id="event-form" novalidate>
+        <label class="sr-only" for="event-form-nome">Nome</label>
+        <input type="text" name="nome" id="event-form-nome" placeholder="Nome" required minlength="2" autocomplete="name">
+        <label class="sr-only" for="event-form-email">Email</label>
+        <input type="email" name="email" id="event-form-email" placeholder="Email" required autocomplete="email">
+        <label class="sr-only" for="event-form-telefone">Telefone (opcional)</label>
+        <div class="phone-group">
+
+<select name="codigo_pais" id="codigo-pais" required>
+  <option value="+258" selected>🇲🇿 +258 Moçambique</option>
+  <option value="+27">🇿🇦 +27 África do Sul</option>
+  <option value="+351">🇵🇹 +351 Portugal</option>
+  <option value="+55">🇧🇷 +55 Brasil</option>
+  <option value="+244">🇦🇴 +244 Angola</option>
+</select>
+
+<input 
+type="tel" 
+name="telefone" 
+id="event-form-telefone" 
+placeholder="Número de telefone"
+required
+autocomplete="tel">
+
+</div>
+        <p class="form-hint" id="event-form-hint" role="status"></p>
+        <button type="submit" class="btn-primary">Confirmar interesse</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========================
+     PATROCÍNIO
+========================= -->
+<section class="sponsor-section" id="patrocinio">
+  <div class="container">
+    <div class="sponsor-box">
+      <div class="sponsor-text">
+        <h3>Torne-se Parceiro da Caminhada Amarela</h3>
+        <p>Associe a sua marca a uma causa que salva vidas e fortaleça a sua responsabilidade social corporativa junto da comunidade de Maputo.</p>
+      </div>
+      <ul class="sponsor-list">
+        <li>Demonstrar compromisso com a saúde mental e o bem-estar da comunidade</li>
+        <li>Reforçar a política de responsabilidade social corporativa</li>
+        <li>Associar a marca a uma causa social relevante</li>
+        <li>Promover uma cultura de prevenção, inclusão e valorização da vida</li>
+        <li>Fortalecer a visibilidade junto da comunidade</li>
+      </ul>
+      <a href="mailto:acapaj21@gmail.com?subject=Patroc%C3%ADnio%20Caminhada%20Amarela%202026" class="btn-primary">Falar sobre patrocínio</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logos/ACAPAJ BORDA.png" alt="ACAPAJ">
+      <p>Transformando adolescentes e jovens através da consciencialização, prevenção e desenvolvimento humano. Desde 2021, em Maputo, Moçambique.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Navegação</h3>
+      <a href="index.html#inicio">Início</a>
+      <a href="index.html#sobre">Sobre Nós</a>
+      <a href="caminhada-amarela.html">Caminhada Amarela</a>
+      <a href="index.html#projectos">Projectos</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>Maputo, Moçambique</p>
+      <p><a href="mailto:acapaj21@gmail.com">acapaj21@gmail.com</a></p>
+      <p><a href="tel:+258863357115">(+258) 86 335 7115</a></p>
+      <div class="socials">
+        <a href="https://www.instagram.com/acapaj.mz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/acapaj.mz" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="https://wa.me/258863357115" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© ACAPAJ 2026 — Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
