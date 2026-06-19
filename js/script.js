@@ -216,7 +216,7 @@ count();
 
 // FORMULÁRIO CAMINHADA AMARELA
 const N8N_WEBHOOK =
-"https://n8n.mozwikn8n.shop/webhook-test/15adf0fc-1546-404c-a325-1200e8cc04c2";
+"https://n8n.mozwikn8n.shop/webhook/15adf0fc-1546-404c-a325-1200e8cc04c2";
 const eventForm =
 document.getElementById("event-form");
 const eventHint =
